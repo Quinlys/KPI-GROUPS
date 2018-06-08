@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./libs/fontawesome/font-awesome.min.css">
+    <meta charset="utf-8">
+
+    <title>KPI Groups</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <!-- include libraries for translation -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.7.2/angular-translate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-sanitize.js"></script>
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <style>body {
+        opacity: 0;
+        overflow-x: hidden;
+    }
+
+    html {
+        background-color: #151515;
+    }</style>
+
+</head>
+
+<body class="ishome" ng-app="app" ng-controller="Ctrl">
+<div class="preloader">
+    <div class="pulse"></div>
+</div>
+
+<div id="my-page">
+
+    <div id="my-header"></div>
+
+    <header class="site-header" style="background-image: url(img/top-bg.jpg);">
+
+        <div class="top-line">
+
+            <a href="http://kpi.ua/ru" class="logo"><img src="img/logo.png"></a>
+
+            <a href="#my-menu" class="hamburger hamburger--emphatic">
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+            </a>
+            <nav id="my-menu">
+                <ul>
+                    <p id="enter">Вхід</p>
+                    <form id="enter1">
+
+                        <li>
+                            <div class="group">
+                                <input id="login" type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Логін</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="group">
+                                <input id="password" type="password" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Пароль</label>
+                            </div>
+                        </li>
+                    </form>
+                    <button translate="Log_in" id="click">Ввійти</button>
+                    <p id="textReg">До сих пір немає аккаунту?</p>
+                    <li>
+                        <button class="btn" id="click1">Реєстрація</button>
+                        <button onclick='location.href="StudentRegistration.html"'
+                                class="btn secondary" id="firstButton">Реєстрація для студента
+                        </button>
+                        <button onclick='location.href="TeacherRegistration.html"' class="btn secondary"
+                                style="width: 230px;">Реєстрація для викладача
+                        </button>
+                        <button onclick='location.href="GroupRegistration.html"' class="btn secondary"
+                                style="width: 225px;">Реєстрація для старости
+                        </button>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+
+        <div class="header-flex">
+
+            <div class="flex-center">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-sm-7 col-xs-10">
+
+                            <div class="header-composition">
+
+                                <div class="welcome">
+                                    <p><span>
+												Welcome to
+											</span></p>
+                                    <h1 id="banner">KPI GROUPS</h1>
+                                </div>
+
+                                <p><strong>KPI GROUPS</strong><span style="margin-left: 5px;"> це унікальний проект який дозволяє кожному бажаючому
+                                    студенту створити власну сторінку для своєї групи</span></p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-social">
+            <nav class="soc">
+                <ul>
+                    <li><a href="#"><i aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <i class="fa fa-location-arrow" style="color: #fff;">
+                            Місце розробки - Білка
+                        </i>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <i class="fa fa-mobile" style="color: #fff;">Тех. підтримка: kpi.groupsss@gmail.com </i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="my-content">
+        <link rel="stylesheet" href="css/main.min.css">
+        <script src="js/scripts.min.js"></script>
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,762 @@
+@charset "UTF-8";
+@font-face {
+    font-family: raleway;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/RalewayRegular/RalewayRegular.eot);
+    src: url(../fonts/RalewayRegular/RalewayRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/RalewayRegular/RalewayRegular.woff) format("woff"), url(../fonts/RalewayRegular/RalewayRegular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: raleway;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/RalewayBold/RalewayBold.eot);
+    src: url(../fonts/RalewayBold/RalewayBold.eot?#iefix) format("embedded-opentype"), url(../fonts/RalewayBold/RalewayBold.woff) format("woff"), url(../fonts/RalewayBold/RalewayBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: raleway;
+    font-weight: 800;
+    font-style: normal;
+    src: url(../fonts/RalewayExtraBold/RalewayExtraBold.eot);
+    src: url(../fonts/RalewayExtraBold/RalewayExtraBold.eot?#iefix) format("embedded-opentype"), url(../fonts/RalewayExtraBold/RalewayExtraBold.woff) format("woff"), url(../fonts/RalewayExtraBold/RalewayExtraBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: raleway;
+    font-weight: 300;
+    font-style: normal;
+    src: url(../fonts/RalewayLight/RalewayLight.eot);
+    src: url(../fonts/RalewayLight/RalewayLight.eot?#iefix) format("embedded-opentype"), url(../fonts/RalewayLight/RalewayLight.woff) format("woff"), url(../fonts/RalewayLight/RalewayLight.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: raleway;
+    font-weight: 600;
+    font-style: normal;
+    src: url(../fonts/RalewaySemiBold/RalewaySemiBold.eot);
+    src: url(../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix) format("embedded-opentype"), url(../fonts/RalewaySemiBold/RalewaySemiBold.woff) format("woff"), url(../fonts/RalewaySemiBold/RalewaySemiBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: raleway;
+    font-weight: 100;
+    font-style: normal;
+    src: url(../fonts/RalewayThin/RalewayThin.eot);
+    src: url(../fonts/RalewayThin/RalewayThin.eot?#iefix) format("embedded-opentype"), url(../fonts/RalewayThin/RalewayThin.woff) format("woff"), url(../fonts/RalewayThin/RalewayThin.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: firasans;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/FiraSansRegular/FiraSansRegular.eot);
+    src: url(../fonts/FiraSansRegular/FiraSansRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/FiraSansRegular/FiraSansRegular.woff) format("woff"), url(../fonts/FiraSansRegular/FiraSansRegular.ttf) format("truetype")
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0
+}
+
+small {
+    font-size: 80%
+}
+
+pre {
+    overflow: auto
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(../fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0);
+    src: url(../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(../fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+:-moz-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+::-moz-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {
+    color: rgba(0, 0, 0, .25);
+    border-color: rgba(0, 0, 0, .25)
+}
+
+body, html {
+    height: 100%
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.75;
+    font-family: raleway, sans-serif;
+    overflow-x: hidden;
+    opacity: 1
+}
+
+body.ishome .site-header {
+    min-height: 700px;
+    height: 100vh;
+    background-color: #151515
+}
+
+body.ishome .site-header .top-line {
+    padding-top: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+
+.type-header {
+    background-position: 0 22%;
+    text-align: center;
+    padding: 40px 0
+}
+
+.type-header h1, .type-header h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #f9c766;
+    margin: 0
+}
+
+.type-header h1 span, .type-header h2 span {
+    color: #fff
+}
+
+header, section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff
+}
+
+section h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800
+}
+
+.site-header {
+    color: #fff
+}
+
+.text-center {
+    text-align: center
+}
+
+a {
+    color: #f9c766
+}
+
+a, button {
+    outline: 0
+}
+
+.callback .selectize-input, .selectize-control.single .selectize-input.input-active, .selectize-input, input, select, textarea {
+    background-color: transparent;
+    border: rgba(0, 0, 0, .1) 1px solid;
+    border-bottom: rgba(0, 0, 0, .1) 2px solid;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    padding: 8px 22px;
+    outline: 0;
+    color: #333;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 16px
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #151515;
+    z-index: 100
+}
+
+.pulse {
+    position: relative;
+    left: 50%;
+    top: 50vh;
+    margin-left: -40px;
+    margin-top: -40px
+}
+
+.pulse:after, .pulse:before {
+    content: '';
+    border: 5px solid #323232;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 500px;
+    border-radius: 500px;
+    position: absolute
+}
+
+.pulse:before {
+    -webkit-animation: pulse-outer .8s ease-in infinite;
+    animation: pulse-outer .8s ease-in infinite
+}
+
+.pulse:after {
+    -webkit-animation: pulse-inner .8s linear infinite;
+    animation: pulse-inner .8s linear infinite
+}
+
+@-webkit-keyframes pulse-outer {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: .5
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes pulse-outer {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: .5
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes pulse-inner {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes pulse-inner {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+/* My code */
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: white;
+    background-size: cover;
+}
+
+.header {
+    height: 10%;
+    width: 100%;
+    background-color: #111;
+}
+
+.regText {
+    color: #aaa;
+    font-size: 4vh;
+    margin-right: 10%;
+    padding-top: 15px;
+}
+
+.registration {
+    height: 90%;
+    width: 100%;
+}
+
+.group {
+    margin-top: 5vh;
+    float: left;
+    text-align: center;
+}
+
+.name, .nameG {
+    margin-left: 70px;
+}
+
+.surname, .password {
+    margin-left: 40px;
+}
+
+.part2 {
+    margin-top: 30px;
+}
+
+.dwtext {
+    font-size: 18px;
+    margin: 0;
+    padding-left: 7vh;
+    font-size: 18px;
+    margin-left: 55px;
+    padding: 0;
+}
+
+.email {
+    margin-top: 30px;
+    margin-left: 55px;
+}
+
+#photo {
+    height: 0px;
+    width: 0px;
+    margin-left: 45px;
+}
+
+#photo img {
+    height: 100%;
+}
+
+.srb {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.click {
+    margin-left: 38px;
+    height: 30px;
+    width: 130px;
+    background-color: #4d86bf;
+    color: #fff;
+}
+
+.click2 {
+    margin-top: 120px;
+    height: 30px;
+    width: 130px;
+    background-color: #4d86bf;
+    color: #fff;
+}
+
+.click, .click2 {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+/* ------------------------ Адаптация под телефоны ---------------------- */
+
+/* --------------- Адаптация под iPhone 4 --------------- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .click {
+        margin-left: 100px;
+    }
+
+    .group {
+        margin-left: 20px;
+    }
+
+    .name {
+        margin-top: 30px;
+    }
+
+    .surname, .nameG, .password {
+        margin-top: 0px;
+    }
+}
+
+/* --------------- Адаптация под iPhone 5 --------------- */
+
+@media (min-width: 320px) and (max-width: 568px) {
+
+    #dwtext {
+        margin-left: 37px;
+        width: 260px;
+    }
+
+    #click {
+        margin: 10px 0px 0px 135px;
+    }
+
+    #click2 {
+        margin: 0px 0px 20px 135px;
+    }
+}
+
+/* ----------- Адаптация под iPhone 7/8 Plus ------------ */
+
+@media (min-width: 414px) and (max-width: 736px) {
+    .group {
+        margin-left: 80px;
+    }
+
+    .name {
+        margin-top: 30px;
+    }
+
+    .surname, .nameG, .password {
+        margin-top: 0px;
+    }
+
+}
+
+/* ------------- Адаптация под iPhone 7/8 --------------- */
+
+@media (min-width: 375px) and (max-width: 667px) {
+
+}
+
+/* ------------- Адаптация под iPad --------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .dwtext, .email {
+        margin-left: 75px;
+    }
+}
+
+/* --------------- Адаптация под Galaxy S5 -------------- */
+
+@media (min-width: 360px) and (max-width: 640px) {
+    .group {
+        margin-left: 35px;
+    }
+
+    .name {
+        margin-top: 30px;
+    }
+
+    .surname, .nameG, .password {
+        margin-top: 0px;
+    }
+}
+
+/* --------------- Адаптация под iPhone X --------------- */
+
+@media (min-width: 375px) and (max-width: 812px) {
+
+}
+
+/* ------------------------ Конец адаптации под телефоны ---------------------- */
+
+/*Инпуты*/
+
+input::-webkit-input-placeholder {
+    color: #00ffff;
+}
+
+input::-moz-placeholder {
+    color: #00ffff;
+}
+
+/*Анимация инпутов*/
+
+.group {
+    opacity: 1;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 245px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 12px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #8e9cd1;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 245px;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #3264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    widows: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 1;
+}
+
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+/*Инпуты*/
+
+/*------- INPUT [TYPE=FILE] -------*/
+
+.fileform {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 26px;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 230px;
+}
+
+.fileform .selectbutton {
+    background-color: #A2A3A3;
+    border: 1px solid #939494;
+    border-radius: 2px;
+    color: #FFFFFF;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 2px 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+
+#upload {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    font-size: 150px;
+    height: 30px;
+    z-index: 20;
+}
+
+.selectbutton {
+    font-size: 13px;
+}
+
+#fileformlabel {
+    background-color: #FFFFFF;
+    color: #000;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 2px;
+    text-align: left;
+    vertical-align: middle;
+    width: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .welcome
+    h1
+      font-size: 60px
+  .s-call
+    background-size: cover
+  .s
+    &-king, &-review, &-partners
+      padding: 10% 0
+
+  .logo-footer
+    width: 180px
+  .social-footer
+    margin-top: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .welcome
+    h1
+      font-size: 48px
+
+  .s-call
+    &::before
+      width: 100%
+    .callback
+      padding: 12% 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .header-contacts
+    > .container > .row > div:nth-child(2)
+      text-align: left
+
+  .carousel-services-item
+    flex-direction: column
+
+  .welcome
+    h1
+      font-size: 45px
+
+  .quotes
+    &::before, &::after
+      display: none
+
+  .partners.owl-carousel
+    .owl-nav
+      > div
+        &.owl-next
+          right: 0
+        &.owl-prev
+          left: 0
+
+  .s-partners
+    h2
+      margin: 0
+
+  .footer-column
+    margin: 30px 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  .welcome
+    margin-top: 30px
+    h1
+      font-size: 28px
+      margin-top: 5px
+    span
+      font-size: 10.3px
+    p
+      span
+        margin: 0 5px
+    strong
+      margin-top: 15px
+  .carousel-service-composition
+    h3
+      font-size: 25px
+
+  .top
+    bottom: 20px
+    &.active
+      right: 20px
+
+  .type-header
+    h1, h2
+      font-size: 26px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px)
+/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+/**/
+

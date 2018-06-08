@@ -1,0 +1,424 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: rgba(0, 0, 0, .25)
+  border-color: rgba(0, 0, 0, .25)
+
+html, body
+  height: 100%
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.75
+  font-family: $default-font
+  overflow-x: hidden
+  opacity: 1
+
+  &.ishome
+    .site-header
+      min-height: 700px
+      height: 100vh
+      background-color: #151515
+      .top-line
+        padding-top: 40px
+        position: absolute
+        width: 100%
+        z-index: 1
+
+.main-menu
+  text-align: center
+  font-size: 14px
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+    li
+      display: inline-block
+      position: relative
+      margin-right: -4px
+      &.active, &:hover
+        a
+          background-color: #2c2c2c
+          color: $accent
+          &::before
+            color: $accent
+      &.active
+        a
+          background-color: #323232
+      a
+        color: #979797
+        text-decoration: underline
+        display: block
+        padding: 24px 20px 25px 35px
+        margin-top: -20px
+        margin-bottom: -20px
+        transition: color .25s ease, background-color .5s ease
+        min-height: 75px
+        &::before
+          transition: color .25s ease
+          content: '\f2c6'
+          font-family: fontawesome
+          margin-right: 8px
+          text-decoration: none
+          font-size: 12px
+          color: #979797
+          position: absolute
+          left: 15px
+          top: 8px
+
+.type-header
+  background-image: url(../img/bg-2.jpg)
+  background-position: 0 22%
+  text-align: center
+  padding: 40px 0
+  h1, h2
+    font-size: 30px
+    text-transform: uppercase
+    font-weight: 800
+    color: $accent
+    margin: 0
+    span
+      color: #fff
+
+section, header
+  position: relative
+  background-size: cover
+  background-position: center
+  background-color: #fff
+
+section
+  h2
+    text-transform: uppercase
+    font-size: 30px
+    font-weight: 800
+  &.inverse
+    color: #fff
+
+h1, h2, h3, h4, h5, h6
+  line-height: 1.4
+  text-transform: uppercase
+  &.h-first
+    color: $accent
+    span
+      color: #fff
+
+.site-header
+  color: #fff
+
+.text-center
+  text-align: center
+
+// Mmenu style
+html.mm-opened
+  overflow-y: scroll !important
+  body
+    background-color: #151515
+
+.mm-panels > .mm-panel.mm-hasnavbar
+  right: -18 . px
+
+.mm-menu.mm-theme-black
+  background-color: #111
+
+.mm-listview > li:not(.mm-divider):after
+  display: none
+
+.mm-panels > .mm-panel > .mm-listview:first-child, .mm-panels > .mm-panel > .mm-navbar + .mm-listview
+  margin-top: 0
+
+.hamburger-box
+  width: 34px
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+  border-radius: 0
+  background-color: #fff
+  height: 2px
+  width: 34px
+
+.mm-menu.mm-theme-black .mm-listview > li.mm-selected > a:not(.mm-next), .mm-menu.mm-theme-black .mm-listview > li.mm-selected > span
+  background-color: transparent
+  color: $accent
+
+.mm-panels > .mm-panel:after, .mm-panels > .mm-panel:before
+  height: 0
+
+.mm-listview > li > a
+  padding:
+    left: 14%
+    right: 14%
+    top: 8px
+    bottom: 8px
+  transition: color .25s ease
+  &:hover
+    color: $accent
+    &::before
+      color: $accent
+  &::before
+    transition: color .25s ease
+    content: '\f2c6'
+    font-family: fontawesome
+    margin-right: 8px
+    text-decoration: none
+    font-size: 12px
+    color: #fff
+
+.mm-listview > li.active
+  & > a
+    color: $accent
+    &::before
+      color: $accent
+
+.hamburger
+  right: 0
+  top: 40px
+  position: absolute
+
+.mm-navbar
+  height: auto
+  border: none
+  position: s
+  .mm-title
+    padding: 0
+    img
+      width: 128px
+      height: auto
+      margin: 5px 0 35px
+
+a
+  color: $accent
+
+a, button
+  outline: none
+
+.logo
+  img
+    width: 128px
+    height: auto
+    margin-left: 40px
+
+.header-flex
+  display: flex
+  height: 100%
+  position: relative
+  top: 0
+
+.flex-center
+  margin: auto
+
+.header-composition
+  text-align: center
+  position: relative
+  p
+    margin-top: 40px
+  .button
+    margin-top: 25px
+
+.welcome
+  p
+    font-size: 14px
+    font-weight: 300
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    white-space: nowrap
+    margin: 0
+    margin-bottom: -10px
+    span
+      margin: 0 10px
+    &::before, &::after
+      content: ''
+      height: 1px
+      width: 100%
+      position: relative
+      background-color: #fff
+      display: inline-block
+  h1
+    font-weight: 100
+    text-transform: uppercase
+    font-size: 70px
+    margin: 0
+    line-height: 1.6
+    border-bottom: 1px solid #fff
+    white-space: nowrap
+  strong
+    font-weight: 300
+    text-transform: uppercase
+    font-size: 18px
+    margin-top: 25px
+    display: block
+    .fa
+      margin-right: 10px
+      font-size: 12px
+      color: #555
+      &:last-child
+        margin-right: inherit
+        margin-left: 10px
+
+.top
+  position: fixed
+  bottom: 25px
+  background-color: #E0E0E0
+  border-radius: 10em
+  color: #666
+  font-size: 26px
+  width: 50px
+  height: 50px
+  line-height: 50px
+  text-align: center
+  cursor: pointer
+  transition: all .25s ease
+  right: -100px
+  z-index: 12
+  opacity: .5
+  &.active
+    right: 30px
+  i
+    line-height: 0
+  &:hover
+    color: #fff
+    background-color: $accent
+    opacity: 1
+
+.button
+  display: inline-block
+  border: none
+  color: #fff
+  text-decoration: none
+  background-color: $accent
+  padding: 16px 45px
+  font-size: 13px
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 3px
+  border-radius: 2px
+  text-align: center
+  position: relative
+  outline: none
+  transition: background-color .1s ease
+  &::after
+    transition: background-color .2s ease
+    position: absolute
+    content: ''
+    height: 4px
+    bottom: 0
+    width: 100%
+    background-color: darken($accent, 50%)
+    opacity: .18
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+    left: 0
+  &:focus, &:hover
+    text-decoration: none
+    color: #fff
+  &:hover
+    background-color: lighten($accent, 5%)
+    &::after
+      opacity: .22
+  &:active
+    background-color: darken($accent, 5%)
+    &::after
+      opacity: .32
+
+  &.button-white
+    background-color: #fff
+    color: #444
+    &::after
+      background-color: rgba(#000, .6)
+    &:hover
+      &::after
+        background-color: rgba(#000, .2)
+    &:active
+      &::after
+        background-color: rgba(#000, .4)
+
+  &.button-dark
+    background-color: #4d4d4d
+    color: #fff
+    &::after
+      background-color: $accent
+      opacity: 1
+    &:hover
+      background-color: lighten(#4d4d4d, 5)
+    &:active
+      &::after
+        background-color: rgba($accent, .2)
+      background-color: darken(#4d4d4d, 2)
+
+.button-wrap
+  text-align: center
+
+input, textarea, select,
+.selectize-control.single .selectize-input.input-active, .selectize-input,
+
+  //Preloader
+.preloader
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: #151515
+  z-index: 100
+
+@mixin opacity($opacity)
+  opacity: $opacity / 100
+  filter: alpha(opacity=$opacity)
+
+.pulse
+  position: relative
+  left: 50%
+  top: 50vh
+  margin:
+    left: -40px
+    top: -40px
+  &:before, &:after
+    content: ''
+    border: 5px solid #323232
+    width: 80px
+    height: 80px
+    border-radius: 500px
+    position: absolute
+  &:before
+    animation: pulse-outer .8s ease-in infinite
+  &:after
+    animation: pulse-inner .8s linear infinite
+
+@keyframes pulse-outer
+  0%
+    @include opacity(100)
+  50%
+    @include opacity(50)
+  100%
+    @include opacity(0)
+
+@keyframes pulse-inner
+  0%
+    transform: scale(0)
+    @include opacity(0)
+  100%
+    transform: scale(1)
+    @include opacity(100)
+
+@import "media"
+// Всегда в конце
